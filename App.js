@@ -7,16 +7,17 @@ const MyApp = () => {
     <Text>ABC</Text> 
     <Text>A</Text>
     </View> 
-    <Gato/>
-    <Gato/>
+    <Gato nome = "Sparks"/>
+    <Gato nome = "Garfield"/>
+    <Gato nome = "Marie"/>
     </>
     )
 }
 
 
-const Gato = () => {
+const Gato = (props) => {
   return (
-    <Text>gato(a)</Text>
+    <Text>meu nome é {props.nome.toUpperCase()}.</Text>
   )
 }
 
