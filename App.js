@@ -18,4 +18,4 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
-let a = 2
+let a = 20
