@@ -17,7 +17,7 @@ const MyApp = () => {
 
 const Gato = (props) => {
   return (
-    <Text>meu nome é {props.nome.toUpperCase()}.</Text>
+    <Text>Meu nome é {props.nome.toUpperCase()}.</Text>
   )
 }
 
