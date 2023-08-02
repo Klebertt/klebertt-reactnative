@@ -7,9 +7,9 @@ const MyApp = () => {
     <Text>ABC</Text> 
     <Text>A</Text>
     </View> 
-    <Gato nome = "Sparks" idade = "2"/>
-    <Gato nome = "Garfield" idade="4"/>
-    <Gato nome = "Marie" idade = "7"/>
+    <Gato nome = "Sparks" idade = {2}/>
+    <Gato nome = "Garfield" idade={4}/>
+    <Gato nome = "Marie" idade = {7}/>
     </>
     )
 }
