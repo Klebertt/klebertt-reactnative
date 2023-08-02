@@ -8,15 +8,15 @@ const MyApp = () => {
     <Text>A</Text>
     </View> 
     <Gato/>
+    <Gato/>
     </>
     )
 }
 
 
-
 const Gato = () => {
   return (
-    <Text>GATOGATO</Text>
+    <Text>gato(a)</Text>
   )
 }
 
