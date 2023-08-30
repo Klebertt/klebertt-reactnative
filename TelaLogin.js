@@ -1,9 +1,7 @@
 import { useState } from 'react';
 import { Text, TextInput } from 'react-native';
-import LoginScreen from './TelaLogin';
-import Flex from './telaWhats';
 
-const MyApp = () => {
+const LoginScreen = () => {
   return (
     <>
       <Text>Hello World</Text>
@@ -23,7 +21,7 @@ const Gato = ({idade}) => {
       <TextInput 
         onChangeText={(texto) => setNome(texto)}
         defaultValue={nome}
-        placeholder='Informe o nome do gato...'
+        placeholder='Login'
         style={{borderWidth: 1, height: 40}}
       />
       <Text>Eu sou um(a) gato(a), meu nome é {nome.toUpperCase()} e eu tenho {idade} {idade === 1 ? "ano" : "anos"}.</Text>
@@ -31,7 +29,4 @@ const Gato = ({idade}) => {
   );
 }
 
-
-export default Flex;
-//export default MyApp;
-//export default LoginScreen;
+//export default LoginScreen
