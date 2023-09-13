@@ -1,5 +1,7 @@
 import React from 'react';
-import {StyleSheet, View} from 'react-native';
+import {StyleSheet, View, Text} from 'react-native';
+
+
 
 const Flex = () => {
   return (
@@ -7,13 +9,14 @@ const Flex = () => {
       style={[
         styles.container,
         {
-          // Try setting `flexDirection` to `"row"`.
           flexDirection: 'column',
         },
       ]}>
-      <View style={{flex: 0.1, backgroundColor: 'lime'}} />
+      <View style={{flex: 0.045, backgroundColor: '#054D45'}} />
+      <View style={{flex: 0.16, backgroundColor: '#065E55'}} />
       <View style={{flex: 1, backgroundColor: 'white'}} />
-      <View style={{flex: 0, backgroundColor: 'green'}} />
+      
+
     </View>
   );
 };
