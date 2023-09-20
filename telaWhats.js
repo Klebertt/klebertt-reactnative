@@ -1,5 +1,6 @@
 import React from 'react';
 import {StyleSheet, View, Text} from 'react-native';
+import { Avatar } from 'react-native-paper';
 
 
 
@@ -11,20 +12,15 @@ const Flex = () => {
       style={[
         styles.container,
         {
-          // Try setting `flexDirection` to `"row"`.
           flexDirection: "column",
         },
       ]}
     >
 
      <View
-        style={{
-          flex: 0.045,
-          backgroundColor: "#054D45",
-          flexDirection: "row",
-          justifyContent: "space-evenly",
-          alignItems: "flex-end",
-        }}
+        style={[
+          styles.linhacima
+        ]}
       >
         <Text style={{ color: "white" }}></Text>
         <Text style={{ color: "white" }}></Text>
@@ -32,20 +28,17 @@ const Flex = () => {
       </View>
       
       <View
-        style={{
-          flex: 0.16,
-          backgroundColor: "#065E55",
-          flexDirection: "row",
-          justifyContent: "space-evenly",
-          alignItems: "flex-end",
-        }}
-      >
-        <Text style={{ color: "white" }}>Conversas</Text>
-        <Text style={{ color: "white" }}>Status</Text>
-        <Text style={{ color: "white" }}>Chamadas</Text>
+        style={[
+          styles.linhameio
+        ]}
+      > 
+        <Text style={[styles.textolinhameio]}>Conversas</Text>
+        <Text style={[styles.textolinhameio]}>Atualizações</Text>
+        <Text style={[styles.textolinhameio]}>Chamadas</Text> 
       </View>
 
       <View style={{ flex: 1, backgroundColor: "white" }} />
+
     </View>
   );
 };
@@ -55,16 +48,27 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 20,
   },
+  linhacima: {
+    flex: 0.045,
+    backgroundColor: "#054D45",
+    flexDirection: "row",
+    justifyContent: "space-evenly",
+    alignItems: "flex-end",
+  },
+  linhameio: {
+    flex: 0.13,
+    backgroundColor: "#065E55",
+    flexDirection: "row",
+    justifyContent: "space-evenly",
+    alignItems: "flex-end",
+  },
+  textolinhameio: {
+    paddingBottom: 20,
+    color: 'white',
+  }
 });
 
-const linhacima = StyleSheet.create({
-  flex: 0.045,
-          backgroundColor: "#054D45",
-          flexDirection: "row",
-          justifyContent: "space-evenly",
-          alignItems: "flex-end",
-  },
-);
+
 
 export default Flex;
 
